@@ -1,0 +1,166 @@
+savedComponent = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18)
+(unless tmp1
+tmp1 = make_sevVariableStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->name = "c_load"
+tmp1->expression = "100f"
+tmp1->index = 1
+(unless tmp2
+tmp2 = make_sevVariableStruct()
+)
+(unless tmp2
+tmp2 = (ncons nil)
+)
+tmp2->name = "idc"
+tmp2->expression = "0.1m"
+tmp2->index = 2
+(unless tmp3
+tmp3 = make_sevVariableStruct()
+)
+(unless tmp3
+tmp3 = (ncons nil)
+)
+tmp3->name = "vdd"
+tmp3->expression = "2"
+tmp3->index = 3
+(unless tmp4
+tmp4 = make_sevVariableStruct()
+)
+(unless tmp4
+tmp4 = (ncons nil)
+)
+tmp4->name = "R0"
+tmp4->expression = "1k"
+tmp4->index = 4
+(unless tmp5
+tmp5 = make_sevVariableStruct()
+)
+(unless tmp5
+tmp5 = (ncons nil)
+)
+tmp5->name = "Rmax"
+tmp5->expression = "1G"
+tmp5->index = 5
+(unless tmp6
+tmp6 = make_sevVariableStruct()
+)
+(unless tmp6
+tmp6 = (ncons nil)
+)
+tmp6->name = "a0"
+tmp6->expression = "0.25"
+tmp6->index = 6
+(unless tmp7
+tmp7 = make_sevVariableStruct()
+)
+(unless tmp7
+tmp7 = (ncons nil)
+)
+tmp7->name = "Beta"
+tmp7->expression = "0.8"
+tmp7->index = 7
+(unless tmp8
+tmp8 = make_sevVariableStruct()
+)
+(unless tmp8
+tmp8 = (ncons nil)
+)
+tmp8->name = "Ea"
+tmp8->expression = "0.6"
+tmp8->index = 8
+(unless tmp9
+tmp9 = make_sevVariableStruct()
+)
+(unless tmp9
+tmp9 = (ncons nil)
+)
+tmp9->name = "g0"
+tmp9->expression = "0.25"
+tmp9->index = 9
+(unless tmp10
+tmp10 = make_sevVariableStruct()
+)
+(unless tmp10
+tmp10 = (ncons nil)
+)
+tmp10->name = "gamma0"
+tmp10->expression = "16"
+tmp10->index = 10
+(unless tmp11
+tmp11 = make_sevVariableStruct()
+)
+(unless tmp11
+tmp11 = (ncons nil)
+)
+tmp11->name = "Kclip"
+tmp11->expression = "50"
+tmp11->index = 11
+(unless tmp12
+tmp12 = make_sevVariableStruct()
+)
+(unless tmp12
+tmp12 = (ncons nil)
+)
+tmp12->name = "maxGap"
+tmp12->expression = "1.7"
+tmp12->index = 12
+(unless tmp13
+tmp13 = make_sevVariableStruct()
+)
+(unless tmp13
+tmp13 = (ncons nil)
+)
+tmp13->name = "minGap"
+tmp13->expression = "0.01"
+tmp13->index = 13
+(unless tmp14
+tmp14 = make_sevVariableStruct()
+)
+(unless tmp14
+tmp14 = (ncons nil)
+)
+tmp14->name = "smoothing"
+tmp14->expression = "1e-8"
+tmp14->index = 14
+(unless tmp15
+tmp15 = make_sevVariableStruct()
+)
+(unless tmp15
+tmp15 = (ncons nil)
+)
+tmp15->name = "tox"
+tmp15->expression = "12"
+tmp15->index = 15
+(unless tmp16
+tmp16 = make_sevVariableStruct()
+)
+(unless tmp16
+tmp16 = (ncons nil)
+)
+tmp16->name = "V0"
+tmp16->expression = "0.25"
+tmp16->index = 16
+(unless tmp17
+tmp17 = make_sevVariableStruct()
+)
+(unless tmp17
+tmp17 = (ncons nil)
+)
+tmp17->name = "Vel0"
+tmp17->expression = "10"
+tmp17->index = 17
+(unless tmp18
+tmp18 = make_sevVariableStruct()
+)
+(unless tmp18
+tmp18 = (ncons nil)
+)
+tmp18->name = "wireopt"
+tmp18->expression = "8"
+tmp18->index = 18
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18)
+)

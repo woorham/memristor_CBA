@@ -1,0 +1,2639 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>woorham_test:memristor_tb:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>1s1r_tb</value>
+					</option>
+					<option>lib
+						<value>woorham_test</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>woorham_test:memristor_tb:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>memristor_tb</value>
+					</option>
+					<option>lib
+						<value>woorham_test</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>spectre_state1</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>wireopt
+				<value>8</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>a0
+				<value>0.4</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Beta
+				<value>0.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Ea
+				<value>0.6</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>g0
+				<value>0.25</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>gamma0
+				<value>16</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Kclip
+				<value>50</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>maxGap
+				<value>1.7</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>minGap
+				<value>0.01</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>smoothing
+				<value>1e-8</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>tox
+				<value>4</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>V0
+				<value>0.25</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Vel0
+				<value>10</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>R0
+				<value>20k</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Rmax
+				<value>1e12</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vdd
+				<value>2</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>an
+				<value>5</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Imax
+				<value>100m</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Imin
+				<value>1e-12</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>N
+				<value>12</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>r_wire
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>c_mem
+				<value>0.1f</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>c_ts
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Vfit
+				<value>4.5</value>
+				<dependentTests>
+					<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<jobpolicyname>ADE XL Default</jobpolicyname>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.238
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.238</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>20</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>2.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:43:23 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.238.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.238.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_164323655</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.238</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.238</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.238.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.238.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.239
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.239</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>20k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>20</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>2.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:45:04 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.239.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.239.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_164504778</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.239</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.239</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.239.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.239.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.240
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.240</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>20k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>20</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>2.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:46:02 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.240.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.240.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_164602579</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.240</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.240</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.240.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.240.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.241
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.241</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>20k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>20</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>2.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:47:28 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.241.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.241.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_164729081</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.241</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.241</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.241.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.241.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.242
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.242</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>20k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>18</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:49:02 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.242.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.242.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_164902441</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.242</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.242</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.242.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.242.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.243
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.243</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>20k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>3.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:50:10 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.243.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.243.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_165010733</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.243</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.243</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.243.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.243.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.244
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.244</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>20k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:50:49 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.244.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.244.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_165049526</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.244</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.244</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.244.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.244.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.245
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.245</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>20k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>14</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>3.7</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:51:41 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.245.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.245.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_165141187</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.245</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.245</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.245.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.245.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.246
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.246</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>20k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>14</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>3.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:52:22 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.246.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.246.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_165222120</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.246</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.246</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.246.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.246.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.247
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>woorham_test:memristor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>1s1r_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>woorham_test:memristor_tb:1_spectre_state1_Interactive.247</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>memristor_tb</value>
+							</option>
+							<option>lib
+								<value>woorham_test</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>wireopt
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>a0
+						<value>0.4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Beta
+						<value>0.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ea
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>g0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>gamma0
+						<value>16</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Kclip
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>maxGap
+						<value>1.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>minGap
+						<value>0.01</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>smoothing
+						<value>1e-8</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>tox
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V0
+						<value>0.25</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vel0
+						<value>10</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R0
+						<value>20k</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Rmax
+						<value>1e12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vdd
+						<value>2</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>an
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imax
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Imin
+						<value>1e-12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>N
+						<value>12</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>r_wire
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_mem
+						<value>0.1f</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>c_ts
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vfit
+						<value>4.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">woorham_test:memristor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Aug 14 16:53:05 2019</timestamp>
+			<resultsname>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.247.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.247.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/newton.ayarlabs_woorham_165305484</localpsfdir>
+			<psfdir>/scratch/woorham/scratch_GF45RFSOI/ade/woorham_test/1s1r_tb/adexl/results/data/Interactive.247</psfdir>
+			<simdir>$AXL_PROJECT_DIR/woorham_test/1s1r_tb/adexl/results/data/Interactive.247</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/vault/chips/al11/user/woorham/al11_top/al11_analog/woorham_test/1s1r_tb/adexl/results/data/Interactive.247.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.247.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>
