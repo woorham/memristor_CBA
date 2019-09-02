@@ -1,0 +1,140 @@
+lib_name: woorham_mem_templates
+cell_name: tb_array
+pins: [  ]
+instances:
+  IDUT:
+    lib_name: woorham_mem_templates
+    cell_name: array
+    instpins:
+      w:
+        direction: inputOutput
+        net_name: "RST"
+        num_bits: 1
+      b:
+        direction: inputOutput
+        net_name: "BL_NSEL"
+        num_bits: 1
+  I5:
+    lib_name: analogLib
+    cell_name: gnd
+    instpins:
+      gnd!:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  I4:
+    lib_name: analogLib
+    cell_name: gnd
+    instpins:
+      gnd!:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  I3:
+    lib_name: analogLib
+    cell_name: gnd
+    instpins:
+      gnd!:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  I2:
+    lib_name: analogLib
+    cell_name: gnd
+    instpins:
+      gnd!:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  I1:
+    lib_name: analogLib
+    cell_name: gnd
+    instpins:
+      gnd!:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  VBL:
+    lib_name: analogLib
+    cell_name: vpwl
+    instpins:
+      PLUS:
+        direction: inputOutput
+        net_name: "net8"
+        num_bits: 1
+      MINUS:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  VSEL:
+    lib_name: analogLib
+    cell_name: vpwl
+    instpins:
+      PLUS:
+        direction: inputOutput
+        net_name: "WL_SEL"
+        num_bits: 1
+      MINUS:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  VRST:
+    lib_name: analogLib
+    cell_name: vpwl
+    instpins:
+      PLUS:
+        direction: inputOutput
+        net_name: "RST"
+        num_bits: 1
+      MINUS:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  VST:
+    lib_name: analogLib
+    cell_name: vpwl
+    instpins:
+      PLUS:
+        direction: inputOutput
+        net_name: "ST"
+        num_bits: 1
+      MINUS:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  VVSS:
+    lib_name: analogLib
+    cell_name: vpwl
+    instpins:
+      PLUS:
+        direction: inputOutput
+        net_name: "net02"
+        num_bits: 1
+      MINUS:
+        direction: inputOutput
+        net_name: "gnd!"
+        num_bits: 1
+  R1:
+    lib_name: analogLib
+    cell_name: res
+    instpins:
+      MINUS:
+        direction: inputOutput
+        net_name: "net02"
+        num_bits: 1
+      PLUS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+  R0:
+    lib_name: analogLib
+    cell_name: res
+    instpins:
+      MINUS:
+        direction: inputOutput
+        net_name: "net8"
+        num_bits: 1
+      PLUS:
+        direction: inputOutput
+        net_name: "BL_NSEL"
+        num_bits: 1

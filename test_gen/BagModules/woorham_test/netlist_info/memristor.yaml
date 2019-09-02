@@ -1,0 +1,4 @@
+lib_name: woorham_mem
+cell_name: memristor
+pins: [ "b", "t" ]
+instances: {}

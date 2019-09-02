@@ -1,0 +1,32 @@
+lib_name: woorham_mem
+cell_name: array
+pins: [ "w", "b" ]
+instances:
+  CELL:
+    lib_name: woorham_mem
+    cell_name: 1s1r_cell
+    instpins:
+      b1:
+        direction: inputOutput
+        net_name: "b"
+        num_bits: 1
+      b0:
+        direction: inputOutput
+        net_name: "b"
+        num_bits: 1
+      t1:
+        direction: inputOutput
+        net_name: "w1"
+        num_bits: 1
+      t0:
+        direction: inputOutput
+        net_name: "w"
+        num_bits: 1
+  PIN3:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}

@@ -1,0 +1,68 @@
+lib_name: woorham_mem
+cell_name: 1s1r_cell
+pins: [ "b0", "t1", "t0", "b1" ]
+instances:
+  I1:
+    lib_name: woorham_mem
+    cell_name: memristor_noise
+    instpins:
+      b:
+        direction: inputOutput
+        net_name: "b1"
+        num_bits: 1
+      t:
+        direction: inputOutput
+        net_name: "mid"
+        num_bits: 1
+  I0:
+    lib_name: woorham_mem
+    cell_name: ts_noise
+    instpins:
+      b:
+        direction: inputOutput
+        net_name: "mid"
+        num_bits: 1
+      t:
+        direction: inputOutput
+        net_name: "t1"
+        num_bits: 1
+  R1:
+    lib_name: analogLib
+    cell_name: res
+    instpins:
+      MINUS:
+        direction: inputOutput
+        net_name: "b1"
+        num_bits: 1
+      PLUS:
+        direction: inputOutput
+        net_name: "b0"
+        num_bits: 1
+  R0:
+    lib_name: analogLib
+    cell_name: res
+    instpins:
+      MINUS:
+        direction: inputOutput
+        net_name: "t1"
+        num_bits: 1
+      PLUS:
+        direction: inputOutput
+        net_name: "t0"
+        num_bits: 1
+  PIN3:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN2:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN1:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
