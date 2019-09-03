@@ -1,7 +1,7 @@
 # Memristor crossbar array generator and 1S1R device models
 ### Developed and maintained by Woorham Bae
 
-## Physic & noise -aware 1S1R device model
+## Physics & noise -aware 1S1R device model
 ![1S1R device model](/image_1s1r.png)
 
 ## Crossbar array generator based on Berkeley Analog Generator (BAG)
