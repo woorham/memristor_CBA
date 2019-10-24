@@ -1,0 +1,11 @@
+simulator lang=spectre
+parameters mc_std_mem = 0.1
+parameters mc_std_ts = 0.1
+parameters sigma_mem = 0
+parameters sigma_ts = 0
+statistics {
+	mismatch {
+		vary sigma_mem dist=gauss std=mc_std_mem
+		vary sigma_ts dist=gauss std=mc_std_ts
+	}
+}
