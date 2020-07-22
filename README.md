@@ -10,7 +10,7 @@
 #### BAG at IEEE CICC2018: https://ieeexplore.ieee.org/abstract/document/8357061
 ![Crossbar_array_generator](/image_array.png)
 
-###Installation guide to be updated
+### Installation guide to be updated
 
 ## Memristor Model Tuning Examples
 ![model_a0](/model_a0.png)
