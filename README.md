@@ -11,3 +11,16 @@
 ![Crossbar_array_generator](/image_array.png)
 
 ###Installation guide to be updated
+
+## Memristor Model Tuning Examples
+![model_a0](/model_a0.png)
+![model_beta](/model_beta.png)
+![model_Ea](/model_Ea.png)
+![model_g0](/model_g0.png)
+![model_gamma](/model_gamma.png)
+![model_maxGap](/model_maxGap.png)
+![model_minGap](/model_minGap.png)
+![model_R0](/model_R0.png)
+![model_tox](/model_tox.png)
+![model_V0](/model_V0.png)
+![model_Vel0](/model_Vel0.png)
